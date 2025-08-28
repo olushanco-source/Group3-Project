@@ -4,32 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OGANI</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- header section starts here  -->
     <header>
+        
         <section class="hero-section">
-            <nav>
-                <img src="image/logo.jpg" alt="image">
-                <ul>
+            <nav class="nav-bar">
+                <img src="image/logo.jpg" alt="image" width="100">
+                <ul class="nav-list">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">SHOP</a></li>
                     <li><a href="#">PAGES</a></li>
                     <li><a href="#">BLOG</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
-                <div>
+                <div class="nav-icons">
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-bag-shopping"></i>
+                
+                    <div class="items">
+                        <p> Items: </p>
+                        <h4>$150.00</h4>
+                    </div>
                 </div>
-            </nav>
 
-            <div>
-                &#9776;
-                <h3>All departments</h3>
+                <h1>&#9776;</h1>
+            </nav>
+            
+
+            <div class="All-Categories">
+                <form action="#">
+                    
+                    <select name="department" id="department">
+                        
+                        <option value="All-department"> &#9776; All department</option>
+                        <option value="featured product">Featured product</option>
+                        <option value="summer Fruit">Summer fruit</option>
+                        <option value="from-the-blog">From the blog</option>
+                    </select>
+                </form>
+
+            
+
+                <div id="Categories-form">
+                    <select name="department" id="catigories1">
+                        <option value="catigories">Categories</option>
+                        <option value="vegetables">vegetables</option>
+                        <option value="fruit-drinks"> Fruit Drinks</option>
+                        <option value="meat">Meat</option>
+
+                    </select>
+
+                    <div class="search-bar">
+                        <input type="text" placeholder="what do you need"> 
+                    
+                        <button>SEARCH</button>
+                    </div>
+                    
+                </div>
+
+                
+                
+                <div class="contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h6>+65 11,188,888</h6>
+                        <p>Support 24/7 time</p>
+                    </div>
+                </div>
                 
             </div>
+
+            
+            <div class="hero-card">
+                <div class="hero-card-text">
+                    <h3>FRUIT FRESH</h3>
+                    <H1>Vegetable <br> 100% Organic</H1>
+                    <p>Free pickup and Delivery Avaliable</p>
+                    <button>SHOP NOW</button>
+                </div>
+
+                <img src="image/mix-fruits.png" alt="Image">
+            </div>
+            
+            
+            <div class="hero-item-card">
+                <div class="hero-item" >
+                    <img src="image/vegetable.png" alt="image" id="vegetable">
+                    <h4>VEGETABLES</h4>
+                </div>
+                <div class="hero-item">
+                    <img src="image/fruit-juice.png" alt="image" id="vegetable"> 
+                    <h4>FRUIT JUICE</h4>
+                </div>
+                <div class="hero-item">
+                    <img src="image/meat.png" alt="image">
+                    <h4 id="meat">MEAT</h4>
+                </div>
+                <div class="hero-item">
+                    <img src="image/orange.png" alt="image">
+                    <h4 id="fresh-fruit">FRESH FRUITS</h4>
+                </div>
+            </div>
+
+
         </section>
     </header>
 
