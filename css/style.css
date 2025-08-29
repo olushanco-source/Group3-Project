@@ -394,4 +394,149 @@ summer fruits section ends here
 
 
 from blog section starts here  
+.sect {
+    display: flex;
+    flex-wrap: wrap;              
+    justify-content: space-between;
+    margin: 50px;
+    gap: 30px;                    
+  }
+  
+  .box1, .box2, .box3 {
+    flex: 1 1 30%;                
+    min-width: 250px;             
+  }
+  
+  .box1 img, .box2 img, .box3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .meta {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .meta i {
+    margin-right: 5px;
+    color: #fb6310;               
+  }
+  
+  .box1 h3, .box2 h3, .box3 h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .box1 p, .box2 p, .box3 p {
+    line-height: 22px;
+    color: #555;
+  }
+  
+  /* FOOTER */
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #f8f8f8;
+    padding: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;              
+  }
+  
+  .foot div {
+    flex: 1 1 22%;                
+    margin-right: 20px;
+    min-width: 200px;             
+  }
+  
+  .one img {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .foot ul {
+    list-style: none;
+    color: #555;
+    line-height: 28px;
+  }
+  
+  .foot h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #222;
+  }
+  
+  .four form {
+    display: flex;
+    margin: 15px 0;
+  }
+  
+  .four input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex: 1;
+    /* outline: none; */
+  }
+  
+  .four button {
+    background: #fb6310;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .four button:hover {
+    background: #e0550e;          
+  }
+  
+  .social i {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .social i:hover {
+    color: #fb6310;
+  }
+  
+  
+  /* Media Query   */
+ 
+  
+  /* Tablets (<= 992px) */
+  @media (max-width: 992px) {
+    .foot div {
+      flex: 1 1 45%;              
+      margin-bottom: 20px;
+    }
+    .sect {
+      justify-content: center;    
+    }
+  }
+  
+  /* Mobile (<= 600px) */
+  @media (max-width: 600px) {
+    .foot div {
+      flex: 1 1 100%;             
+      margin-bottom: 20px;
+    }
+    .sect {
+      flex-direction: column;     
+      margin: 20px;
+    }
+    .four form {
+      flex-direction: column;     
+    }
+    .four input,
+    .four button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
 from blog section ends here  */
